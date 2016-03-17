@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>mkt-mike tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The main CSS file -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- CSS file for your custom modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+
+<!-- Scrollspy set in the body -->
+<body id="home" data-spy="scroll" data-target=".main-nav" data-offset="73">
+
+<!--///////////////////////////////////////// PARALLAX BACKGROUND ////////////////////////////////////////-->
+
+<!-- image is set in the CSS as a background image -->
+<div id="parallax"></div>
+
+<!--///////////////////////////////////////// end PARALLAX BACKGROUND ////////////////////////////////////////-->
+
+
+
+<!--/////////////////////////////////////// NAVIGATION BAR ////////////////////////////////////////-->
+
+<section id="header">
+
+    <nav class="navbar navbar-fixed-top" role="navigation">
+
+        <div class="navbar-inner">
+            <div class="container">
+
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#navigation"></button>
+
+                <!-- Logo goes here - replace the image with yours -->
+                <a href="index.html" class="navbar-brand"><img src="images/logo.png" class="logo-img img-responsive" alt="IMIKE! Logo" title="IMIKE! Logo"></a>
+
+
+                <div class="collapse navbar-collapse main-nav" id="navigation">
+
+
+                    <ul class="nav pull-right">
+
+                        <!-- Menu items go here -->
+                        <li class="active"><a href="#all" title="所有">HOME</a></li>
+                        <li><a href="#imike" title="眯客">IMIKE</a></li>
+                        <li><a href="#dev" title="开发">DEV</a></li>
+                        <li><a href="#qa" title="测试">QA</a></li>
+                        <li><a href="#opt" title="运维">OPT</a></li>
+                        <li><a href="#other" title="其他">OTHER</a></li>
+                        <li><a href="#faq" title="有问题请联系我">FAQ/Contact</a></li>
+                        <!-- If you want sub-menu items, do them like this
+                        <li>
+                            <ul>
+                              <li><a href="#">Item 1</a></li>
+                              <li><a href="#">Item 2</a></li>
+                            </ul>
+                        </li>
+                        You just need to delete these comment lines -->
+                    </ul>
+
+                </div><!-- /nav-collapse -->
+            </div><!-- /container -->
+        </div><!-- /navbar-inner -->
+    </nav>
+
+</section>
+
+<!--//////////////////////////////////////// end NAVIGATION BAR ////////////////////////////////////////-->
+
+
+<div id="mikeUrlList" style="display: none">
+    <div class="gallery-items">
+
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all imike">
+            <figure href=" http://www.imike.com/">
+                <img src="images/icons/logo/mike-logo.png" class="img-responsive" />
+                眯客官网
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all imike">
+            <figure href="http://oa.imike.com">
+                <img src="images/icons/logo/mike-logo.png" class="img-responsive" />
+                oa系统
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all imike">
+            <figure href="https://meican.com/">
+                <img src="images/icons/logo/meican.png" class="img-responsive" />
+                同学们，辛苦了。晚上点餐专用，请在3点之前点餐，3点过后请找前台MM
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all imike dev">
+            <figure href="http://wiki.imike.cc">
+                <img src="images/icons/logo/confluence-logo.gif" class="img-responsive" />
+                我们可以在Confluence上面进行创建，分享和讨论文件，想法，备忘录，规格，实体模型，图表和项目， 通过Confluence平台进行小组工作的协同和知识分享。
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all dev">
+            <figure href="http://gitlab.imike.cc/">
+                <img src="images/icons/logo/gitlab-logo.jpg" class="img-responsive" />
+                GitLab是利用 Ruby on Rails 一个开源的版本管理系统,实现一个自托管的Git项目仓库,可通过Web界面进行访问公开的或者私人项目。
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all dev qa opt">
+            <figure href="http://10.4.4.228:8080/jenkins/">
+                <img src="images/icons/logo/jenkins-logo.png" class="img-responsive" />
+                Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all dev qa">
+            <figure href="http://cn.rapapi.net/">
+                <img src="images/icons/logo/rap-logo.png" class="img-responsive" />
+                接口管理工具，开源免费，接口自动化，MOCK数据自动生成，自动化测试，企业级管理。阿里妈妈MUX团队出品！阿里巴巴都在用！
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all qa">
+            <figure href="http://testlink.imike.cc/">
+                <img src="images/icons/logo/mike-test-logo.png" class="img-responsive" />
+                TestLink 是基于web的测试用例管理系统，主要功能是测试用例的创建、管理和执行，并且还提供了一些简单的统计功能。
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all dev qa opt">
+            <figure href="http://10.4.33.99:8080/otstools/">
+                <img src="images/icons/logo/mikeopt-logo.png" class="img-responsive" />
+                眯客运维系统
+            </figure>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all dev qa opt">
+            <figure href="http://sale.imike.com/">
+                <img src="images/icons/logo/mikeguanli-logo.png" class="img-responsive" />
+                B端内容运营
+            </figure>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 gallery-item gallery-popup all dev qa">
+            <figure href="http://192.168.20.80/otsapi.html">
+                <img src="images/icons/logo/otsapi-logo.png" class="img-responsive" />
+                开发文档相关
+            </figure>
+        </div>
+    </div>
+</div>
+
+<section id="all" class="gallery">
+    <div class="container">
+        <header>
+        </header>
+        <div class="gallery-filter">
+            <select>
+                <option value="*" selected>All</option>
+                <option value=".imike">IMIKE</option>
+                <option value=".dev">DEV</option>
+                <option value=".qa">QA</option>
+                <option value=".opt">OPT</option>
+            </select>
+        </div>
+
+    </div>
+    </div><!-- /container -->
+</section>
+<section id="imike" class="gallery">
+    <div class="container">
+        <header>
+        </header>
+        <div class="gallery-filter">
+            <select>
+                <option value="*">All</option>
+                <option value=".imike" selected>IMIKE</option>
+                <option value=".dev">DEV</option>
+                <option value=".qa">QA</option>
+                <option value=".opt">OPT</option>
+            </select>
+        </div>
+
+    </div>
+    </div><!-- /container -->
+</section>
+
+<section id="dev" class="gallery">
+    <div class="container">
+            <p>你有你的需求，我有我的选择。你嘲笑我技术宅孤独一生，我可怜你只能呆呆站在墙里。你可以轻视昼夜不分的Coding，但我会证明它至少可以买到火车票。技术宅的路上少不了苦逼和孤独，但那又怎样，哪怕成不了大神，也要码的漂亮。我是IT男，我为自己代言。</p>
+        <div class="gallery-filter">
+            <select>
+                <option value="*">All</option>
+                <option value=".imike">IMIKE</option>
+                <option value=".dev" selected>DEV</option>
+                <option value=".qa">QA</option>
+                <option value=".opt">OPT</option>
+            </select>
+        </div>
+    </div>
+    </div><!-- /container -->
+</section>
+
+
+
+<section id="qa" class="gallery">
+    <div class="container">
+        <p>你有你的理由，我有我的原则。你嘲笑我不断做重复的工作，我可怜你不断被打回重测。你可以轻视我不断重复，但我会证明出自我手质量我有，QA的路上少不了反复，但那又怎样，哪怕项目延期，也要控出质量。我是QA，我为自己代言。.</p>
+        <div class="gallery-filter">
+            <select>
+                <option value="*">All</option>
+                <option value=".imike">IMIKE</option>
+                <option value=".dev">DEV</option>
+                <option value=".qa" selected>QA</option>
+                <option value=".opt">OPT</option>
+            </select>
+        </div>
+    </div>
+    </div><!-- /container -->
+</section>
+<section id="opt" class="gallery">
+    <div class="container">
+        <header>
+        </header>
+        <div class="gallery-filter">
+            <select>
+                <option value="*">All</option>
+                <option value=".imike">IMIKE</option>
+                <option value=".dev">DEV</option>
+                <option value=".qa">QA</option>
+                <option value=".opt" selected>OPT</option>
+            </select>
+        </div>
+    </div>
+    </div><!-- /container -->
+</section>
+<section id="other" class="gallery">
+    <div class="container">
+        <h4>经过测试同学的整理，部分环境的地址如下（如发现变动请反馈）：</h4>
+        <p>一、测试地址（模拟环境）：</p><p>ots：<a href="http://smlt-ots.imike.cn/ots/" class="external-link" rel="nofollow">http://smlt-ots.imike.cn/ots/</a></p><p>hms：<a href="http://smlt-hms.imike.cn/hms/" class="external-link" rel="nofollow">http://smlt-hms.imike.cn/hms/</a></p><p>bms：<a href="http://sms.imike.cn" style="line-height: 1.4285715;" class="external-link" rel="nofollow">http://sms.imike.cn</a></p><p>pms2：<a href="http://hotelsimu.imike.cn" class="external-link" rel="nofollow">http://hotelsimu.imike.cn</a></p><p>otai：<a href="http://smlt-otai.imike.cn/otai/" class="external-link" rel="nofollow">http://smlt-otai.imike.cn/otai/</a>&nbsp;(<span style="line-height: 1.4285715;">10.4.17.121</span><span style="line-height: 1.4285715;">)</span></p><p><a href="http://10.4.17.121:8081/ots/" class="external-link" rel="nofollow">Soap：</a><a href="http://10.4.26.201:8082/soap/hessian" class="external-link" rel="nofollow">http://10.4.26.201:8082/soap/hessian</a></p><p><span style="color: rgb(0,0,0);">B端内容运营：<a href="http://sale.imike.com/main/login.html" class="external-link" rel="nofollow">http://sale.imike.com/main/login.html</a></span></p><p>&nbsp;</p><p>hms1：<a href="http://10.4.26.201:8080/hms/" class="external-link" rel="nofollow">http://10.4.26.201:8080/hms/</a></p><p>hms2：<a href="http://10.4.17.121:8080/hms/" class="external-link" rel="nofollow">http://10.4.17.121:8080/hms/</a></p><p>ots1：<a href="http://10.4.26.201:8081/ots/" class="external-link" rel="nofollow">http://10.4.26.201:8081/ots/</a></p><p><a href="http://10.4.26.201:8081/ots/" class="external-link" rel="nofollow">ots2：</a><a href="http://10.4.17.121:8081/ots/" class="external-link" rel="nofollow">http://10.4.17.121:8081/ots/</a></p><p>&nbsp;</p><p>二、hotfix环境：</p><p>ots：<a href="http://10.4.11.218:8081/ots/" class="external-link" rel="nofollow">http://10.4.11.218:8081/ots/</a>&nbsp; &nbsp;&nbsp;<a href="http://hotfix-ots.imike.cn/ots/" class="external-link" rel="nofollow">http://hotfix-ots.imike.cn/ots/</a></p><p>hms：<a href="http://10.4.11.218:8080/hms/" class="external-link" rel="nofollow">http://10.4.11.218:8080/hms/</a>&nbsp;&nbsp;<a href="http://hotfix-hms.imike.cn/hms/" class="external-link" rel="nofollow">http://hotfix-hms.imike.cn/hms/</a></p><p>bms：<a href="http://10.4.11.218:7010/sy/comm/page/page.jsp?rhDevFlag=true" class="external-link" rel="nofollow">http://10.4.11.218:7010/sy/comm/page/page.jsp?rhDevFlag=true</a></p><p>pms2：<a href="https://10.4.11.218:8450/" class="external-link" rel="nofollow">https://10.4.11.218:8451/</a></p><p>otai：<a href="https://10.4.11.218:8443/otai" class="external-link" rel="nofollow">http://10.4.11.218:8443/otai</a></p><p><a href="http://10.4.17.121:8081/ots/" class="external-link" rel="nofollow">Soap：</a><a href="http://10.4.11.218:8083/soap" class="external-link" rel="nofollow">http://10.4.11.218:8083/soap</a><a href="http://10.4.17.121:8081/ots/" class="external-link" rel="nofollow"></a></p><p>&nbsp;</p><p>三、测试地址（老）：</p><p>OTS：<a href="http://ota2test.imike.cn/ots/" class="external-link" rel="nofollow">http://ota2test.imike.cn/ots/</a></p><p>HMS：<a href="http://hms2test.imike.cn/hms/loginController?login" class="external-link" rel="nofollow">http://hms2test.imike.cn/hms/</a></p><p>BMS：<a href="http://10.4.11.235:8080/" class="external-link" rel="nofollow">http://10.4.11.235:8080/</a></p><p>&nbsp;</p><p>四、正式地址：</p><p>OTS：<a href="qq://txfile/" rel="nofollow">http://ots.imike.com/ots</a>/</p><p>HMS：<a href="http://hms.imike.com/hms/" class="external-link" rel="nofollow">http://hms.imike.com/hms/</a><a href="http://hms.imike.com/hms/loginController?login" class="external-link" rel="nofollow"></a></p><p>BMS：<a href="http://sale.imike.com/" class="external-link" rel="nofollow">http://sale.imike.com/</a></p><p>PMS：<a href="https://call.pmshotel.cn" class="external-link" rel="nofollow">https://call.pmshotel.cn</a></p><p>OTAI：<a href="https://otai.imike.com/otai" class="external-link" rel="nofollow">https://otai.imike.com/otai</a>&nbsp;</p><p>&nbsp;</p><p>五、北京模拟测试地址：</p><p>OTS：<a href="http://bj-smlt-ots.imike.cn/ots" class="external-link" rel="nofollow">http://bj-smlt-ots.imike.cn/ots</a>/</p><p>HMS：<a href="http://bj-smlt-hms.imike.cn/hms/" class="external-link" rel="nofollow">http://bj-smlt-hms.imike.cn/hms/</a><a href="http://hms.imike.com/hms/loginController?login" class="external-link" rel="nofollow"></a></p><p>BMS：<a href="http://bj-smlt-sms.imike.cn/" class="external-link" rel="nofollow">http://bj-smlt-sms.imike.cn/</a></p><p>PMS：<a href="http://hotelsimu.imike.cn/" class="external-link" rel="nofollow">http://hotelsimu.imike.cn</a></p><p>OTAI：<a href="https://bj-smlt-otai.imike.cn/otai" class="external-link" rel="nofollow">https://bj-smlt-otai.imike.cn/otai</a></p><p><a href="http://10.4.17.121:8081/ots/" class="external-link" rel="nofollow">Soap：</a><a href="http://10.10.131.104:8085" class="external-link" rel="nofollow">http://10.10.131.104:8085</a><a href="http://10.4.26.201:8082/soap/hessian" class="external-link" rel="nofollow">/soap/hessian</a></p><div>ots-smlt-bj-tomcat-1 10.10.124.247</div><div>ots-smlt-bj-tomcat-2 10.10.131.104&nbsp;</div>
+    </div>
+    </div><!-- /container -->
+</section>
+
+<!--/////////////////////////////////////// FAQ SECTION ////////////////////////////////////////-->
+
+<section id="faq">
+
+    <div class="container">
+
+        <header>
+            <h1>F.A.Q.</h1>
+            <p class="lead">You have a question?</p>
+        </header>
+
+        <div class="row">
+
+
+                <!--////////// Accordion Toggle //////////-->
+                <div class="panel-group" id="accordion">
+
+                <div class="alert" style="align-content: center">
+
+                    <p class="lead">MY Contact Details</p>
+                    <div class="row">
+
+                        <div class="col-md-4 col-xs-6 text-left">
+                            <strong>Address</strong>
+                        </div>
+
+                        <div class="col-md-8 col-xs-6">
+                            <address>
+                                上海市徐汇区田林路487号 宝石园23号楼601<br>
+                            </address>
+                        </div>
+
+                    </div><!-- /row -->
+
+                    <div class="row">
+
+                        <div class="col-md-4 col-xs-6 text-left">
+                            <strong>Mobile Number</strong>
+                        </div>
+
+                        <div class="col-md-8 col-xs-6">
+                            <address>
+                                +13917314090<br>
+                            </address>
+                        </div>
+
+                    </div><!-- /row -->
+
+                    <div class="row">
+
+                        <div class="col-md-4 col-xs-6 text-left">
+                            <strong>Email</strong>
+                        </div>
+
+                        <div class="col-md-8 col-xs-6">
+                            <address>
+                                qi.chen@imike.com<br>
+                            </address>
+                        </div>
+
+                    </div><!-- /row -->
+
+                </div><!-- /alert -->
+
+
+        </div>
+    </div>
+</div>
+</section>
+
+<!--/////////////////////////////////////// end FAQ SECTION ////////////////////////////////////////-->
+
+
+<!--//////////////////////////////////////// FOOTER SECTION ////////////////////////////////////////-->
+<section id="footer">
+    <div class="bottom-menu-inverse">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2015 IMIKE! Collect from Chenqi.</p>
+                </div>
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
+
+</section>
+
+<!--//////////////////////////////////////// end FOOTER SECTION ////////////////////////////////////////-->
+
+
+
+<!--//////////////////////////////////////// JAVASCRIPT LOAD ////////////////////////////////////////-->
+
+<!-- Feel free to remove the scripts you are not going to use -->
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/jquery.fitvids.min.js"></script>
+
+<script src="js/bootstrap-select.js"></script>
+<script src="js/bootstrap-switch.js"></script>
+<script src="js/flatui-checkbox.js"></script>
+<script src="js/flatui-radio.js"></script>
+<script src="js/jquery.tagsinput.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/custom.js"></script>
+
+<!--//////////////////////////////////////// end JAVASCRIPT LOAD ////////////////////////////////////////-->
+
+</body>
+</html>
